@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Prueba de Megger"/>
+		<meta name="author" content ="Hermilo Pérez Valenzuela">
+		<meta name="copyright" content="Norfi Carrodeguas"/>
+		<meta name="keywords" content="Prueba aislamiento, motores, Índice de polarización, Índice Absorción Dieléctrica"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<meta name="theme-color" content="black"/>
+		<title>Proceso Reparación Motores</title>
+		<!-- <link rel="shortcut icon" type="icon" href="Megger.ico"> -->
+		<link rel="stylesheet" type="text/css" href="../fonts/webfont.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="CntPrn flx">
+				<div class="CntFlx flx flxCI">
+					<span class="txtNSlccnbl">Generación de O.S.</span>
+				</div>
+			</div>
+		</header>
+		<section>
+			<ul>
+				<li>
+					<a class="CntPrn txtNSlccnbl">
+						<div class="flx CntFlx flxCC">Datos del motor</div>
+						<div class="flx flxCD"></div>
+						<div class="flx flxCC expa"><i class="fa arrow"></i></div>
+					</a>
+					<ul>
+						<li class="flx flxCC">
+							<a>
+								<div class="flx flxCI">¿Placa?</div>
+								<div class="CntFlx flx flxCD">
+									<label for="optPunchY">Sí</label><input type="radio" id="optPunchY" name="optPunch" value="0">
+									<label for="optPunchN">No</label><input type="radio" id="optPunchN" name="optPunch" value="1">
+								</div>
+							</a>
+						</li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optVoltage" class="txtNSlccnbl">Voltaje</label></div><div class="CntFlx flx flxCD"><input type="number" id="optVoltage" name="optVoltage" step="10" value="440" tabindex="1"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optCurrent" class="txtNSlccnbl">Corriente</label></div><div class="CntFlx flx flxCD"><input type="number" id="optCurrent" name="optCurrent" step="10" value="" tabindex="2"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optPower" class="txtNSlccnbl">Potencia</label></div><div class="CntFlx flx flxCD"><input type="number" id="optPower" name="optPower" step="10" value="" tabindex="3"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optRPM" class="txtNSlccnbl">RPM</label></div><div class="CntFlx flx flxCD"><input type="number" id="optRPM" name="optRPM" step="10" value="" tabindex="4"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optFrecuency" class="txtNSlccnbl">Frecuencia</label></div><div class="CntFlx flx flxCD"><input type="number" id="optFrecuency" name="optFrecuency" step="10" value="60" tabindex="5"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optInsulation" class="txtNSlccnbl">Aislamiento</label></div><div class="CntFlx flx flxCD"><select name="optInsulation" id="optInsulation" tabindex="6"></select></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optLeads" class="txtNSlccnbl">Líneas Salida</label></div><div class="CntFlx flx flxCD"><select name="optLeads" id="optLeads" tabindex="7"></select></div></a></li>
+						
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optFrame" class="txtNSlccnbl">Frame</label></div><div class="CntFlx flx flxCD"><input type="text" name="optFrame" id="optFrame" tabindex="8"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optKVA" class="txtNSlccnbl">KVA</label></div><div class="CntFlx flx flxCD"><input type="text" name="optKVA" id="optKVA" tabindex="9"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optBrand" class="txtNSlccnbl">Marca</label></div><div class="CntFlx flx flxCD"><input type="text" name="optBrand" id="optBrand" tabindex="10"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optModel" class="txtNSlccnbl">Modelo</label></div><div class="CntFlx flx flxCD"><input type="text" name="optModel" id="optModel" tabindex="11"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optSN" class="txtNSlccnbl">Serie</label></div><div class="CntFlx flx flxCD"><input type="text" name="optSN" id="optSN" tabindex="12"></div></a></li>
+						<li class="flx flxCC">
+							<a>
+								<div class="flx flxCI">¿Tipo?</div>
+								<div class="CntFlx flx flxCD">
+									<label for="optTypeN">Nema</label><input type="radio" id="optTypeN" name="optType" value="0">
+									<label for="optTypeI">IEC</label><input type="radio" id="optTypeI" name="optType" value="1">
+								</div>
+							</a>
+						</li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optTypeFB" class="txtNSlccnbl">Flecha-Base</label></div><div class="CntFlx flx flxCD"><input type="number" id="optTypeFB" name="optTypeFB" step="10" value="" tabindex="13"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optTypeBP" class="txtNSlccnbl">Barrenos (Pata)</label></div><div class="CntFlx flx flxCD"><input type="number" id="optTypeBP" name="optTypeBP" step="10" value="" tabindex="14"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optTypeBPs" class="txtNSlccnbl">Barrenos (Patas)</label></div><div class="CntFlx flx flxCD"><input type="number" id="optTypeBPs" name="optTypeBPs" step="10" value="" tabindex="15"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optTypeDE" class="txtNSlccnbl">Diámetro eje</label></div><div class="CntFlx flx flxCD"><input type="number" id="optTypeDE" name="optTypeDE" step="10" value="" tabindex="16"></div></a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a class="CntPrn txtNSlccnbl"><div class="flx CntFlx flxCC">Datos técnicos</div><div class="flx flxCD"></div><div class="flx flxCC expa"><i class="fa arrow"></i></div></a>
+					<ul>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="txtUser" class="txtNSlccnbl">Usuario</label></div><div class="CntFlx flx flxCD"><input type="text" name="txtUser" id="txtUser" tabindex="17"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optPlant" class="txtNSlccnbl">Planta</label></div><div class="CntFlx flx flxCD"><select name="optPlant" id="optPlant" tabindex="18"></select></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optMini" class="txtNSlccnbl">Mini</label></div><div class="CntFlx flx flxCD"><select name="optMini" id="optMini" tabindex="19"></select></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="optProcess" class="txtNSlccnbl">Proceso</label></div><div class="CntFlx flx flxCD"><select name="optProcess" id="optProcess" tabindex="20"></select></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="txtEquipment" class="txtNSlccnbl">Equipo</label></div><div class="CntFlx flx flxCD"><input type="text" name="txtEquipment" id="txtEquipment" tabindex="21"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="txtTAG" class="txtNSlccnbl">TAG</label></div><div class="CntFlx flx flxCD"><input type="text" name="txtTAG" id="txtTAG" tabindex="22"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="txtBill" class="txtNSlccnbl">Cuenta</label></div><div class="CntFlx flx flxCD"><input type="text" name="txtBill" id="txtBill" tabindex="23"></div></a></li>
+						<li class="flx flxCC"><a><div class="flx flxCI"><label for="txtApprover" class="txtNSlccnbl">Aprobador</label></div><div class="CntFlx flx flxCD"><input type="text" name="txtApprover" id="txtApprover" tabindex="24"></div></a></li>
+					</ul>
+				</li>
+			</ul>
+		</section>	
+		<footer></footer>		
+		<SCript src="js/app.js"></SCript>
+	</body>
+</html>
