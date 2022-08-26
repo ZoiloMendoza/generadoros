@@ -1,5 +1,5 @@
 var url = window.location.href;
-var swLocation = '/generadoros/sw.js';
+var swLocation = '/generador.ordenes.salida/sw.js';
 
 
 if( navigator.serviceWorker ){
